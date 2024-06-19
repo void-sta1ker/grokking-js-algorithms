@@ -1,0 +1,23 @@
+{
+  "name": "grokking-js-algorithms",
+  "version": "1.0.0",
+  "description": "Grokking Algorithms implemented in javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/void-sta1ker/grokking-js-algorithms.git"
+  },
+  "keywords": [
+    "algorithms",
+    "javascript"
+  ],
+  "author": "void-sta1ker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/void-sta1ker/grokking-js-algorithms/issues"
+  },
+  "homepage": "https://github.com/void-sta1ker/grokking-js-algorithms#readme"
+}
