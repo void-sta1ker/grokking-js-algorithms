@@ -11,15 +11,55 @@ Grokking Algorithms implemented in javascript
 - O(n^2)
 - O(n!) - factorial time
 
-![Graph](image.png)
+Example:
+n = 8
+log(n) = 3
+n log(n) = 24
+n^2 = 64
+n! = 40320
 
-## Important
+![Graph](big-o-of-different-algos.png)
+
+## Big O Notation
 
 - Algorithm speed isn’t measured in seconds, but in growth of the number of operations
 - Instead, we talk about how quickly the run time of an algorithm increases as the size of the input increases
 - Run time of algorithms is expressed in Big O notation
-- Big O notation lets you compare the number of operations.
-- Big O notation is about the worst-case scenario.
+- Big O notation lets you compare the number of operations
+- Big O notation is about the worst-case scenario
+
+## Arrays and Linked lists
+
+|           | Arrays                                           | Lists                | Hybrid              |
+| --------- | ------------------------------------------------ | -------------------- | ------------------- |
+| Access    | random                                           | sequential           | random + sequential |
+| Reads     | O(1)                                             | O(n)                 | O(log n + k)        |
+| Insertion | O(n) _except pushing to the end in static array_ | O(1) _head and tail_ | O(log n + 1)        |
+| Deletion  | O(n) _except removing the last item_             | O(1) _head and tail_ | O(log n + 1)        |
+
+## Call Stack & Recursion
+
+When using recursion, the items you're looking through is saved on the stack. Computers allocate memory on the stack for each function call
+
+Recursion keeps track of the state
+
+> p. 44 last paragraph where call stack is discussed reminds me of generators & iterators
+
+## Divide & Conquer
+
+1. Figure out a simple case and the base case
+2. Figure out how to reduce your problem and get to the base case
+
+## Euclid's algorithm & number theory, inductive proof, traveling salesman problem
+
+## Hash tables: collisions, hash functions, load factor
+
+## Graphs. Graph theory
+
+Breadth-first search solves shortest path problem.
+A graph has nodes and edges. A node might have neighbors.
+Directed graph - relationship is only one way.
+Topological sort - If task A depends on task B, task A shows up later in the list. This is called a topological sort, and it’s a way to make an ordered list out of a graph.
 
 ## Solve the logarithmic equation log₂(x) = 3
 
