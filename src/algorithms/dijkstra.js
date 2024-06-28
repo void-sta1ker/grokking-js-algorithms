@@ -25,7 +25,7 @@ function dijkstra(graph, start) {
     for (const neighbor in graph[current]) {
       if (!visited.has(neighbor)) {
         queue.enqueue(neighbor);
-        distances[neighbor] = distances[current] + 1;
+        distances[neighbor] = distances[current] + graph[current][neighbor];
         previous[neighbor] = current;
       }
     }

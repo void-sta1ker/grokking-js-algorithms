@@ -11,5 +11,8 @@ test("correctly calculates the shortest path", () => {
       },
       "A"
     )
-  ).toEqual({ A: 0, B: 5, C: 7, D: 9 });
+  ).toEqual({
+    distances: { A: 0, B: 5, C: 2, D: 5 },
+    previous: { A: null, B: "A", C: "A", D: "C" },
+  });
 });
