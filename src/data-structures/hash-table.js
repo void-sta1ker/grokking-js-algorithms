@@ -87,4 +87,4 @@ class ValuePair {
 // console.log(hashTable.get("job"));
 // console.log(hashTable.toString());
 
-export default HashTable;
+module.exports = HashTable;

@@ -20,7 +20,7 @@ function findSmallest(arr) {
  * @param {Array} arr array of numbers
  * @returns {Array} sorted array
  */
-export default function selectionSort(arr) {
+function selectionSort(arr) {
   const newArr = [];
 
   const arrLen = arr.length;
@@ -32,3 +32,5 @@ export default function selectionSort(arr) {
 
   return newArr;
 }
+
+module.exports = selectionSort;

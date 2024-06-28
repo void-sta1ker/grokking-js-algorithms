@@ -1,4 +1,4 @@
-import Queue from "../data-structures/queue";
+const Queue = require("../data-structures/queue");
 
 /**
  * Breadth-first search. Best case O(V + E). Average case O(V + E). Worst case O(V + E). Space O(V). V for number of vertices, E for number of edges
@@ -7,7 +7,7 @@ import Queue from "../data-structures/queue";
  * @param {string | number} start Starting node
  * @returns {Set} Set of visited nodes
  */
-export default function bfs(graph, start) {
+function bfs(graph, start) {
   const queue = new Queue();
   queue.enqueue(start);
 
@@ -29,4 +29,4 @@ export default function bfs(graph, start) {
   return visited;
 }
 
-// bfs({ 0: [1, 2], 1: [3], 2: [4], 3: [4], 4: [] }, 0);
+module.exports = bfs;

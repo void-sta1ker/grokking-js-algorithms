@@ -61,6 +61,12 @@ A graph has nodes and edges. A node might have neighbors.
 Directed graph - relationship is only one way.
 Topological sort - If task A depends on task B, task A shows up later in the list. This is called a topological sort, and it’s a way to make an ordered list out of a graph.
 
+## Dijkstra's Algorithm
+
+1. Find the cheapest node
+2. Figure out how long it takes to get to its neighbours (the cost)
+3. Repeat step 1 and 2
+
 ## Solve the logarithmic equation log₂(x) = 3
 
 **Solution By Steps**

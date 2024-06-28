@@ -4,7 +4,7 @@
  * @param {Array} arr array of numbers
  * @returns {Array} sorted array
  */
-export default function quicksort(arr) {
+function quicksort(arr) {
   if (arr.length <= 1) {
     return arr;
   }
@@ -28,3 +28,5 @@ export default function quicksort(arr) {
 
   return [...quicksort(left), ...equal, ...quicksort(right)];
 }
+
+module.exports = quicksort;

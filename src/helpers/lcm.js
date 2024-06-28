@@ -1,6 +1,8 @@
-import gcd from "./gcd";
+const gcd = require("./gcd");
 
 // solve by using math
-export default function lcmMath(a, b) {
+function lcmMath(a, b) {
   return (a * b) / gcd(a, b);
 }
+
+module.exports = lcmMath;

@@ -5,6 +5,8 @@
  * @param {number} step step size
  * @returns {number[]} array of numbers
  */
-export default function range(n, start = 0, step = 1) {
+function range(n, start = 0, step = 1) {
   return Array.from({ length: n }, (_, i) => start + i * step);
 }
+
+module.exports = range;

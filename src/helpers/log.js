@@ -4,8 +4,10 @@
  * @param {number} base Defaults to 2
  * @returns {number} log of a number
  */
-export default function log(n, base = 2) {
+function log(n, base = 2) {
   const result = Math.log(n) / Math.log(base);
 
   return Math.ceil(result);
 }
+
+module.exports = log;

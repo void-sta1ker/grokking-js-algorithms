@@ -4,7 +4,7 @@
  * @param {Array} arr array of numbers
  * @returns {Array} sorted array
  */
-export default function mergeSort(arr) {
+function mergeSort(arr) {
   if (arr.length <= 1) {
     return arr;
   }
@@ -33,3 +33,5 @@ function merge(left, right) {
 
   return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
 }
+
+module.exports = mergeSort;

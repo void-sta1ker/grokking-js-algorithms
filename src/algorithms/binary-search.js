@@ -5,7 +5,7 @@
  * @param {number} target target value
  * @returns {number} index position of target or `-1` if not found
  */
-export function binarySearchIterative(arr, target) {
+function binarySearchIterative(arr, target) {
   let left = 0;
   let right = arr.length - 1;
 
@@ -27,12 +27,7 @@ export function binarySearchIterative(arr, target) {
   return -1;
 }
 
-export function binarySearchRecursive(
-  arr,
-  target,
-  left = 0,
-  right = arr.length - 1
-) {
+function binarySearchRecursive(arr, target, left = 0, right = arr.length - 1) {
   if (left > right) {
     return -1;
   }
@@ -56,3 +51,8 @@ Exercises:
 1.1 log(128) = 7
 1.2 log(256) = 8
 */
+
+module.exports = {
+  binarySearchIterative,
+  binarySearchRecursive,
+};

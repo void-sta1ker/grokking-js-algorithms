@@ -4,7 +4,7 @@
  * @param {Array} arr array of numbers
  * @returns {number} maximum number
  */
-export default function max(arr) {
+function max(arr) {
   if (arr.length === 0) {
     return undefined;
   }
@@ -29,7 +29,7 @@ export default function max(arr) {
  * @param {Array} arr array of numbers. If the array is empty, returns `undefined`.
  * @returns {number} maximum number
  */
-export function max2(arr) {
+function max2(arr) {
   if (arr.length === 0) {
     return undefined;
   }
@@ -46,3 +46,5 @@ export function max2(arr) {
 
   return arr[0] > subMax ? arr[0] : subMax;
 }
+
+module.exports = { max, max2 };

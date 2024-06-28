@@ -1,4 +1,4 @@
-import Node from "../helpers/node";
+const Node = require("../helpers/node");
 
 /**
  * Singly Linked List
@@ -189,4 +189,4 @@ class SinglyLinkedList {
   }
 }
 
-export default SinglyLinkedList;
+module.exports = SinglyLinkedList;

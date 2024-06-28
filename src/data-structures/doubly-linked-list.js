@@ -1,4 +1,4 @@
-import Node from "../helpers/node";
+const Node = require("../helpers/node");
 
 /**
  * Doubly Linked List
@@ -173,4 +173,4 @@ class DoublyLinkedList {
   }
 }
 
-export default DoublyLinkedList;
+module.exports = DoublyLinkedList;
