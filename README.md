@@ -57,11 +57,18 @@ Recursion keeps track of the state
 ## Graphs. Graph theory
 
 Breadth-first search solves shortest path problem.
-A graph has nodes and edges. A node might have neighbors.
+A graph has nodes (vertices) and edges. A node might have neighbors.
 Directed graph - relationship is only one way.
+An undirected graph means that both nodes point to each other. That’s a cycle.
 Topological sort - If task A depends on task B, task A shows up later in the list. This is called a topological sort, and it’s a way to make an ordered list out of a graph.
 
 ## Dijkstra's Algorithm
+
+Breadth-first search is used to calculate the shortest path for an unweighted graph.
+Dijkstra’s algorithm is used to calculate the shortest path for a weighted graph.
+Dijkstra’s algorithm works when all the weights are positive. You can’t use Dijkstra’s algorithm if you have negative-weight edges.
+If you have negative weights, use the Bellman-Ford algorithm
+Dijkstra’s algorithm only works with directed acyclic graphs, called DAGs for short.
 
 1. Find the cheapest node
 2. Figure out how long it takes to get to its neighbours (the cost)
