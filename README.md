@@ -4,11 +4,12 @@ Grokking Algorithms implemented in javascript
 
 ## Common run times for algorithms
 
-- O(n) - linear time
-- O(log n) - logarithmic (log) time
 - O(1) - constant time
+- O(log n) - logarithmic (log) time
+- O(n) - linear time
 - O(n \* log n)
 - O(n^2)
+- O(2^n) - with every increase of n, the operations count doubles
 - O(n!) - factorial time
 
 Example:
@@ -50,7 +51,7 @@ Recursion keeps track of the state
 1. Figure out a simple case and the base case
 2. Figure out how to reduce your problem and get to the base case
 
-## Euclid's algorithm & number theory, inductive proof, traveling salesman problem
+## Euclid's algorithm & number theory, inductive proof, traveling salesperson problem, set-covering problem
 
 ## Hash tables: collisions, hash functions, load factor
 
@@ -167,6 +168,16 @@ Great job working on this problem! Feel free to choose one of the related questi
     - Point-in-Time Recovery
 
 These algorithms are fundamental to the operation, efficiency, and reliability of database systems.
+
+## Forming a triangle
+
+To determine if three given numbers can form a triangle, you can use the triangle inequality theorem. This theorem states that for three sides to form a triangle, the sum of the lengths of any two sides must be greater than the length of the remaining side.
+
+Given three numbers \(a\), \(b\), and \(c\), they can form a triangle if the following conditions are all true:
+
+1. \(a + b > c\)
+2. \(a + c > b\)
+3. \(b + c > a\)
 
 ## Other helpful github repos
 
